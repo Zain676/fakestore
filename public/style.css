@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif !important;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.carousel-item img {
+    width: 100% !important;  
+    height: 100vh !important; 
+    object-fit: cover !important;
+}
+
+.custom-text-container {
+    top: 20%;      
+    left: 20%;   
+    transform: translate(-10%, -10%); 
+    color: white;  
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); 
+}
+
+.custom-text-container h1,p {
+    color: black;
+}
+
+btn {
+    margin-right: 1rem !important;
+}
+
+.btn1 {
+    background-color: rgb(18, 194, 194) !important;
+}
+
+.btn2 {
+    background-color: rgb(255, 186, 58) !important;
+}
+
+.btn1:hover {
+    background-color: rgb(15, 163, 163) !important;
+}
+.btn2:hover {
+    background-color: rgb(231, 171, 58) !important;
+}
+
+
+section {
+    margin: 5rem;
+    width: 35rem !important;
+}
+
+form .button {
+    text-align: center;
+}
+
+.fixed-img {
+    height: 250px; 
+    object-fit: contain; 
+}
+
+.card-body {
+    min-height: 150px; 
+}

@@ -1,0 +1,26 @@
+<%- include('includes/header') %>
+
+<div class="navbar">
+    <h1 class="m-5 mt-3">Products</h1>
+    <a href="/" class="btn btn1 btn-lg">Back</a>
+    
+</div>
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <% products.forEach(product => { %>
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div class="card shadow-sm h-100 d-flex flex-column">
+                    <img src="<%= product.image %>" class="card-img-top img-fluid fixed-img mt-3" alt="<%= product.title %>">
+                    <div class="card-body text-center d-flex flex-column justify-content-between">
+                        <h5 class="card-title"><%= product.title %></h5>
+                        <p class="card-text fw-bold">$<%= product.price %></p>
+                    </div>
+                </div>
+            </div>
+        <% }) %>
+    </div>
+</div>
+
+
+<%- include('includes/footer') %>

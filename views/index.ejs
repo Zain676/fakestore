@@ -1,0 +1,41 @@
+<%- include('includes/header') %>
+
+<div id="carouselExampleSlidesOnly" class="carousel slide position-relative"
+    data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="/hero_img.png" class="d-block w-50 mx-auto" alt="Banner">
+
+            <div class="position-absolute custom-text-container">
+                <h1 class="fw-bold">Welcome to Our Store</h1>
+                <p class="fs-5">Discover the best products at unbeatable
+                    prices!</p>
+                <a href="#contactForm" class="btn btn1 btn-lg me-3">Get in
+                    Touch</a>
+                <a href="/products" class="btn btn2 btn-lg">View Products</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section id="contactForm" class="container">
+    <h2 class="mb-4">Contact Us</h2>
+    <form action="/submit" method="post">
+        <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" name="name" class="form-control" id="name"
+                placeholder="Enter your name" required>
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" name="email" class="form-control" id="email"
+                placeholder="Enter your email" required>
+        </div>
+        <div class="button mt-5">
+            <button type="submit" class="btn btn1">Submit</button>
+        </div>
+
+    </form>
+</section>
+
+<%- include('includes/footer') %>
